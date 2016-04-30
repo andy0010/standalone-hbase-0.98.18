@@ -25,7 +25,7 @@ ENV PATH $HBASE_HOME/bin:$JAVA_HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
 #复制hbase配置
 COPY conf/hbase-env.sh /hbase-0.98.18-hadoop1/conf/
 COPY conf/hbase-site.xml /hbase-0.98.18-hadoop1/conf/
-
+COPY conf/regionservers /hbase-0.98.18-hadoop1/conf/
 
 CMD ["/bin/bash"]
 
